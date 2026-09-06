@@ -1,21 +1,24 @@
 :root{
-  --cream:#faf7f2;
-  --cream-2:#f2ece1;
-  --ink:#101828;
-  --ink-2:#1d2939;
-  --muted:#667085;
-  --line:#e6dfd3;
-  --gold:#b9924a;
-  --gold-2:#e0c68d;
+  --cream:#fdf1ec;
+  --cream-2:#f7e2d9;
+  --ink:#3a211d;
+  --ink-2:#4d2b25;
+  --muted:#8a685f;
+  --line:#eed6ca;
+  --gold:#b3665a;
+  --gold-2:#dba393;
   --ok:#16794f;
   --warn:#b54708;
   --bad:#b42318;
+  --dark:#5c2b26;
+  --dark-2:#432019;
   --radius:18px;
   --radius-sm:11px;
   --maxw:1140px;
-  --shadow:0 10px 30px rgba(16,24,40,.07);
-  --shadow-lg:0 26px 64px rgba(16,24,40,.16);
-  --serif:"Fraunces",Georgia,"Times New Roman",serif;
+  --shadow:0 10px 30px rgba(90,40,32,.08);
+  --shadow-lg:0 26px 64px rgba(90,40,32,.18);
+  --serif:"Playfair Display",Georgia,"Times New Roman",serif;
+  --script:"Playfair Display",Georgia,serif;
   --sans:"Inter",system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;
 }
 *,*::before,*::after{box-sizing:border-box}
@@ -65,6 +68,7 @@ dl,dd,dt{margin:0}
 .site-header{position:sticky;top:0;z-index:40;background:rgba(250,247,242,.9);backdrop-filter:blur(10px);border-bottom:1px solid var(--line)}
 .header-inner{display:flex;align-items:center;justify-content:space-between;gap:16px;min-height:70px}
 .brand{display:flex;align-items:center;gap:11px}
+.brand-logo{width:40px;height:40px;border-radius:10px;object-fit:cover}
 .brand-mark{display:grid;place-items:center;width:38px;height:38px;border-radius:10px;background:var(--ink);color:var(--gold-2);font-family:var(--serif);font-weight:700;font-size:.95rem;letter-spacing:.02em}
 .brand-text{display:flex;flex-direction:column;line-height:1.15}
 .brand-text strong{font-family:var(--serif);font-size:1.02rem;font-weight:700}
@@ -155,7 +159,8 @@ dl,dd,dt{margin:0}
 
 /* about */
 .about-grid{display:grid;grid-template-columns:.85fr 1.15fr;gap:clamp(24px,4vw,56px);align-items:center}
-.about-photo{aspect-ratio:4/5;border-radius:var(--radius);background:linear-gradient(150deg,var(--cream-2),#e2d7c2);display:grid;place-items:center;font-family:var(--serif);font-size:3.4rem;color:var(--gold);border:1px solid var(--line)}
+.about-photo{aspect-ratio:4/5;width:100%;border-radius:var(--radius);object-fit:cover;border:1px solid var(--line);box-shadow:var(--shadow)}
+.credential-line{font-family:var(--sans);font-weight:600;font-size:.92rem;color:var(--gold);letter-spacing:.01em;margin:-.3em 0 1rem}
 
 /* final cta */
 .cta-inner{background:var(--ink);color:#fff;border-radius:calc(var(--radius) + 6px);padding:clamp(30px,5vw,66px);text-align:center;box-shadow:var(--shadow-lg)}
