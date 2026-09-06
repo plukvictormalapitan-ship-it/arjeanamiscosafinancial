@@ -99,8 +99,12 @@ dl,dd,dt{margin:0}
 .s-name{font-size:.86rem;font-weight:600;margin:0}
 .s-amt{font-family:var(--serif);font-size:1.02rem;font-weight:700;margin:0}
 .tag{flex:0 0 auto;font-size:.6rem;font-weight:700;letter-spacing:.09em;text-transform:uppercase;padding:.32rem .55rem;border-radius:999px;background:var(--cream-2);color:var(--muted)}
-.tag-gold{background:rgba(185,146,74,.18);color:#7a5c1d}
-.tag-dark{position:absolute;top:10px;right:10px;background:var(--ink);color:#fff}
+.tag-gold{background:rgba(179,102,90,.18);color:#7a3a2f}
+.tag-dark{background:var(--ink);color:#fff}
+.avatar-row{display:flex;align-items:center;justify-content:space-between;margin-bottom:14px}
+.avatar-stack{display:flex;align-items:center}
+.avatar-stack img{width:34px;height:34px;border-radius:50%;object-fit:cover;border:2px solid #fff;box-shadow:0 2px 6px rgba(90,40,32,.18);margin-left:-11px;display:block;background:var(--cream-2)}
+.avatar-stack img:first-child{margin-left:0}
 
 /* trust strip */
 .trust{padding:26px 0;border-top:1px solid var(--line);border-bottom:1px solid var(--line);background:var(--cream-2)}
